@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AprendeYa | Cursos en línea</title>
+    <link rel="icon" href="Img/Letra.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <div class="X-titulo">
+                <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+                <p class="categorias">Categorías</p>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#desarrollo" class="enlace-nav">Desarrollo Web</a></li>
+                <li><a href="#ciencias-informaticas" class="enlace-nav">Ciencias Informáticas</a></li>
+                <li><a href="#bases-datos">Bases de datos</a></li>
+                <li><a href="#videojuegos">Desarrollo de videojuegos</a></li>
+            </ul>
+        </nav>
+        <h1>AprendeYa</h1>
+        <button id="icono-carro" class="carro-compras"><i class="bi bi-cart2"></i></button>
+        <div id="carrito" class="carrito">
+                                    
+            <table id="lista-carrito" class="lista-carrito">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Curso</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <a href="#" id="vaciar-carrito" class="vaciar-carrito">Vaciar Carrito</a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="pag-1">
+            <h2 class="titulo-1">Donde la <i>innovación</i> y el <i>conocimiento</i> se fusionan. Aprende sin límites y sé la mejor versión de ti mismo. ¡Empieza ahora tu viaje hacia el éxito educativo!</h2>
+            <div class="contenedor-slider">
+                <div class="slider" id="slider">
+                    <div class="slider-section">
+                        <img loading="lazy" src="Img/estudio-laptop.jpg" alt="" class="img-slider">
+                        <p class="descripcion-slider">¡La educación del futuro, en tus manos hoy!</p>
+                    </div>
+                    <div class="slider-section">
+                        <img loading="lazy" src="Img/estudio-objetos.jpg" alt="" class="img-slider">
+                        <p class="descripcion-slider">Desata tu potencial desde la comodidad de tu pantalla, porque aprender debería ser tan fácil como hacer clic.</p>
+                    </div>
+                    <div class="slider-section">
+                        <img loading="lazy" src="Img/estudio-gente.jpg" alt="" class="img-slider">
+                        <p class="descripcion-slider">Construimos caminos hacia el éxito. ¡tu futuro te está esperando!</p>
+                    </div>
+                </div>
+                <div class="slider-btn slider-btn-left" id="btn-left"><</div>
+                <div class="slider-btn slider-btn-right" id="btn-right">></div>
+            </div>
+        </section>
+
+        <section class="seccion-cursos" id="seccion-cursos">
+            <h3 class="titulo-categoria" id="desarrollo">Desarrollo Web</h3>
+                <div class="contenedor-cursos">
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/fundamentos.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Fundamentos de programación</p>
+                            <p class="autor">Juan Miguel Arias</p>
+                            <p class="precio">25.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="1" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                    
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/html-css.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Aprende HTML y CSS</p>
+                            <p class="autor">Esteban Rodriguez</p>
+                            <p class="precio">40.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="2">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/javascript.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Introducción a JavaScript</p>
+                            <p class="autor">Jerónimo Gonzales</p>
+                            <p class="precio">75.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="3">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/react.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Aprende React</p>
+                            <p class="autor">Camila Buitrago</p>
+                            <p class="precio">120.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="4">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <h3 class="titulo-categoria" id="ciencias-informaticas">Ciencias Informáticas</h3>
+                <div class="contenedor-cursos">
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/python.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Curso completo de Python</p>
+                            <p class="autor">Vannessa Alvarez</p>
+                            <p class="precio">130.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="5">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/machine.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Principios de Machine Learning</p>
+                            <p class="autor">Juliana Rivera</p>
+                            <p class="precio">60.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="6">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/ia.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Fundamentos Inteligencia Artificial</p>
+                            <p class="autor">Diego Rave</p>
+                            <p class="precio">35.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="7">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/ciencia-de-datos.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Introducción Data Scientist</p>
+                            <p class="autor">Ana Gutierrez</p>
+                            <p class="precio">100.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="8">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="titulo-categoria" id="bases-datos">Bases de datos</h3>
+                <div class="contenedor-cursos">
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/sql.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">SQL: Consultas basicas a complejas</p>
+                            <p class="autor">Raul Ramirez</p>
+                            <p class="precio">75.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="9" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                    
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/php.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Aprende PHP y MySql: Curso completo y practico</p>
+                            <p class="autor">Julieta Villamayor</p>
+                            <p class="precio">105.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="10">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/mongo.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">MongoDB: De cero a experto</p>
+                            <p class="autor">Camilo Sanchez</p>
+                            <p class="precio">95.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="11">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/master.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Master en Base de datos</p>
+                            <p class="autor">Laura Tobon</p>
+                            <p class="precio">200.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="12">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <h3 class="titulo-categoria" id="videojuegos">Desarrollo de videojuegos</h3>
+                <div class="contenedor-cursos ultimo">
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/unity.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Introduccion a Unity y tu primer videojuego</p>
+                            <p class="autor">Juan Fernandez</p>
+                            <p class="precio">150.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="13">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/principios.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Principios en el desarrollo de videojuegos</p>
+                            <p class="autor">Enzo Alvarez</p>
+                            <p class="precio">20.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="14">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/c++.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Aprende C++</p>
+                            <p class="autor">Julian Rodriguez</p>
+                            <p class="precio">85.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="15">Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <img loading="lazy" class="imagenes-cursos" src="Img/c-numeral.jpg" alt="Curso de programacion">
+                        <div class="informacion-curso">
+                            <p class="descripcion-curso">Sistema de asistencia C#</p>
+                            <p class="autor">Nicole Andrade</p>
+                            <p class="precio">120.000 COP</p>
+                            <a href="#" class="agregar-carrito" data-id="16">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4 class="titulo-footer">AprendeYa</h4>
+        <p class="descripcion-footer">Donde la innovación y el conocimiento se fusionan</p>
+        <hr>
+        <p class="copyright-footer"><i id="icono-footer" class="bi bi-c-circle"></i>2024. Hecho por <span class="enlace-footer">Jerónimo Rodríguez S.</span></p>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
